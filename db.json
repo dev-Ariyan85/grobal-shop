@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Computer",
+      "price": 20,
+      "description": "These days, probably mobile/cell phones."
+    },
+    {
+      "id": "2",
+      "name": "smartphone",
+      "price": 49.99,
+      "description": "I have a few technological devices like a smartphone"
+    },
+    {
+      "id": "3",
+      "name": "laptop",
+      "price": 619.32,
+      "description": " have a few technological devices like a laptop"
+    },
+    {
+      "id": "4",
+      "name": "Refrigerator",
+      "price": 622.29,
+      "description": "refrigerator, they remain fresh and good for consumption for a longer"
+    },
+    {
+      "id": "5",
+      "name": "Air Purifie",
+      "price": 402.23,
+      "description": "A device that removes contaminants from the air."
+    },
+    {
+      "id": "6",
+      "name": "washing machine",
+      "price": 802.25,
+      "description": "The washing machine is one of the wonderful inventions of electronic"
+    }
+  ],
+  "carts": [
+    {
+      "id": "2b87",
+      "productId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "75d1",
+      "productId": "2",
+      "quantity": 1
+    }
+  ]
+}

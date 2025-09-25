@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel — Analytics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex bg-gray-100">
+
+  <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 text-gray-100">
+      <div class="p-6 text-2xl font-bold border-b border-gray-700">Global Brand</div>
+      <nav class="mt-6">
+        <a href="#" class="block py-2.5 px-6 rounded hover:bg-gray-700">Dashboard</a>
+        <a href="../Admin/product.html" class="block py-2.5 px-6 rounded hover:bg-gray-700">Products</a>
+        <a href="../Admin/order.html" class="block py-2.5 px-6 rounded hover:bg-gray-700">Orders</a>
+        <a href="../Admin/Customers.html" class="block py-2.5 px-6 rounded hover:bg-gray-700">Customers</a>
+        <a href="#" class="block py-2.5 px-6 rounded hover:bg-gray-700">Analytics</a>
+        <a href="../Admin/settings.html" class="block py-2.5 px-6 rounded hover:bg-gray-700">Settings</a>
+      </nav>
+    </aside>
+
+  <!-- Main Content -->
+  <div class="flex-1 flex flex-col">
+
+    <!-- Topbar -->
+    <header class="flex justify-between items-center bg-white shadow px-6 py-4">
+      <h1 class="text-xl font-bold">Analytics</h1>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        Admin
+      </button>
+    </header>
+
+    <!-- Stats Cards -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-gray-500 text-sm">Revenue</h2>
+        <p class="text-2xl font-bold text-gray-800">$12,340</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-gray-500 text-sm">Orders</h2>
+        <p class="text-2xl font-bold text-gray-800">1,245</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-gray-500 text-sm">Users</h2>
+        <p class="text-2xl font-bold text-gray-800">3,420</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-gray-500 text-sm">Visitors</h2>
+        <p class="text-2xl font-bold text-gray-800">9,876</p>
+      </div>
+    </section>
+
+    <!-- Charts -->
+    <section class="p-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+      <!-- Line Chart -->
+      <div class="bg-white p-6 rounded shadow">
+        <h2 class="text-lg font-bold mb-4">Revenue Overview</h2>
+        <canvas id="revenueChart" class="w-full h-64"></canvas>
+      </div>
+
+      <!-- Bar Chart -->
+      <div class="bg-white p-6 rounded shadow">
+        <h2 class="text-lg font-bold mb-4">Orders per Month</h2>
+        <canvas id="ordersChart" class="w-full h-64"></canvas>
+      </div>
+
+      <!-- Pie Chart -->
+<div class="bg-white p-6 rounded shadow lg:col-span-2">
+  <h2 class="text-lg font-bold mb-4">User Distribution</h2>
+  <canvas id="usersChart" class="w-full h-32"></canvas>
+</div>
+
+
+    </section>
+
+  </div>
+
+  <!-- External JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../scripts/analytics.js"></script>
+</body>
+</html>
